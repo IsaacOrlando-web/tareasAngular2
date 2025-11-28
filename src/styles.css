@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+/* Asegura que app-root ocupe todo el espacio disponible */
+app-root {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Asegura que app-tarea también ocupe el ancho completo */
+app-tarea {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Asegura que el texto sea legible en dispositivos móviles */
+@media (max-width: 480px) {
+    html {
+        font-size: 16px; /* Previene zoom automático en inputs en iOS */
+    }
+    
+    body {
+        padding: 0;
+    }
+
+    app-tarea {
+        padding: 10px;
+    }
+}
